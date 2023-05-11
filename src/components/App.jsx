@@ -42,7 +42,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    'Refreshing user...'
+    'Refreshing user.....'
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
