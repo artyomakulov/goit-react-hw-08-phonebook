@@ -1,7 +1,7 @@
 .formSection {
     border: 2px solid grey;
     width: 350px;
-    height: 150px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
@@ -12,7 +12,3 @@
     margin: 10px 0;
   }
   
-  /* .btn {
-    width: 150px;
-    margin-top: auto;
-  } */
