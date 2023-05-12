@@ -13,6 +13,7 @@ export const contactsApi = createApi({
       return headers;
     },
   }),
+  refetchOnMountOrArgChange: true,
   endpoints: builder => ({
     fetchContacts: builder.query({
       query: () => '/contacts',
