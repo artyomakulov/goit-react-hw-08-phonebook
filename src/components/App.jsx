@@ -1,24 +1,3 @@
-// import Form from './Form/Form';
-// import ContactList from './Contacts/Contacts';
-// import Filter from './Filter/Filter';
-// import css from './App.module.css';
-
-// function App() {
-//   return (
-//     <div className={css.section}>
-//       <h1>Phonebook</h1>
-//       <Form />
-//       <h2>Contacts</h2>
-//       <Filter />
-//       <ContactList />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-///////////////
-
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
