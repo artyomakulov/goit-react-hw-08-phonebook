@@ -75,7 +75,7 @@ export const RegisterForm = () => {
                   name="name"
                   required
                   fullWidth
-                  label="Name"
+                  label="Username"
                   autoFocus
                 />
               </Grid>
