@@ -11,7 +11,6 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import { Toaster } from 'react-hot-toast';
 
 function Copyright() {
   return (
@@ -98,7 +97,6 @@ export const LoginForm = () => {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
-    <Toaster/>
   </>
   
   );

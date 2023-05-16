@@ -1,5 +1,5 @@
 import React from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import Button from '@mui/material/Button';
 import css from './Contacts.module.css';
 import { useSelector } from 'react-redux';
@@ -48,7 +48,6 @@ export default function ContactList() {
           );
         })}
       </ol>
-      <Toaster />
     </>
   );
 }

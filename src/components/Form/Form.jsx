@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import Button from '@mui/material/Button';
 import css from './Form.module.css';
 import {
@@ -76,7 +76,6 @@ function Form() {
       type="submit" disabled={name === '' || number === ''}>
         Add contact
       </Button>
-      <Toaster />
     </form>
     
   );
