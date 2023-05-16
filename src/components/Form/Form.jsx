@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import css from './Form.module.css';
 import {
   useAddContactMutation,
   useFetchContactsQuery,
 } from 'redux/contacts/contactsApi';
+
+const notifyAdd = () => toast.success('Сontact added successfully!')
 
 function Form() {
   const [addContact] = useAddContactMutation();
@@ -27,6 +30,7 @@ function Form() {
       addContact(newContact);
       reset();
     }
+    notifyAdd()
   };
 
   const handleChange = e => {
@@ -70,7 +74,9 @@ function Form() {
       <button type="submit" disabled={name === '' || number === ''}>
         Add contact
       </button>
+      <Toaster />
     </form>
+    
   );
 }
 

@@ -1,7 +1,10 @@
 import React from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import css from './Contacts.module.css';
 import { useSelector } from 'react-redux';
 import { useDeleteContactMutation, useFetchContactsQuery } from 'redux/contacts/contactsApi';
+
+const notifyDelete = () => toast.error('Сontact deleted successfully!')
 
 export default function ContactList() {
   const { data: contacts = [] } = useFetchContactsQuery();
@@ -32,7 +35,7 @@ export default function ContactList() {
               </p>
               <button
                 className={css.ContactList_btn}
-                onClick={() => func(id)}
+                onClick={() => notifyDelete(func(id))}
                 type="button"
               >
                 Delete
@@ -41,6 +44,7 @@ export default function ContactList() {
           );
         })}
       </ol>
+      <Toaster />
     </>
   );
 }
