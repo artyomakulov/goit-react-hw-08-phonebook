@@ -12,11 +12,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 
-function Copyright(props) {
+function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://www.linkedin.com/in/artyomakulov//">
         ArtemAkulov
       </Link>{' '}
       {new Date().getFullYear()}
@@ -41,7 +41,7 @@ export const LoginForm = () => {
     form.reset();
   };
 
-return (
+  return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -53,12 +53,16 @@ return (
             alignItems: 'center',
           }}
         >
-<Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-          </Avatar>
+          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}></Avatar>
           <Typography component="h1" variant="h5">
             Log In
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box
+            component="form"
+            noValidate
+            onSubmit={handleSubmit}
+            sx={{ mt: 3 }}
+          >
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
@@ -86,7 +90,7 @@ return (
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Log In
             </Button>
           </Box>
         </Box>
@@ -94,5 +98,4 @@ return (
       </Container>
     </ThemeProvider>
   );
-
-}
+};
