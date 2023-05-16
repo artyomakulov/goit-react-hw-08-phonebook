@@ -1,23 +1,3 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import { store } from './redux/store';
-// import { Provider } from 'react-redux';
-// import './index.css';
-// import ContactsForm from 'pages/Contacts';
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//       <ContactsForm />
-//     </Provider>
-//   </React.StrictMode>
-// );
-
-
-/////////////////////////
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
