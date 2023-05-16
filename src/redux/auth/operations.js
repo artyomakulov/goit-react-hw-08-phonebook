@@ -20,6 +20,11 @@ export const register = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
+      if (error.response && error.response.status === 400) {
+        toast.error('This name or email is already used');
+      } else {
+        toast.error('An error occurred');
+      }
       return thunkAPI.rejectWithValue(error.message);
     }
   }
