@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import Button from '@mui/material/Button';
 import css from './Form.module.css';
 import {
   useAddContactMutation,
@@ -70,9 +71,11 @@ function Form() {
           className={css.input}
         />
       </label>
-      <button type="submit" disabled={name === '' || number === ''}>
+      <Button 
+      variant="contained"
+      type="submit" disabled={name === '' || number === ''}>
         Add contact
-      </button>
+      </Button>
       <Toaster />
     </form>
     

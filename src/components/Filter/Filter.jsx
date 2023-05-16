@@ -12,7 +12,7 @@ export default function Filter() {
   return (
     <label>
       <h3>Filter by name </h3>
-      <input onChange={changeFilter} type="text" name="filter" value={filter} style={{background: 'rgb(248, 238, 225)'}}/>
+      <input onChange={changeFilter} type="text" name="filter" value={filter} style={{background: 'rgb(232, 253, 253)'}}/>
     </label>
   );
 }
