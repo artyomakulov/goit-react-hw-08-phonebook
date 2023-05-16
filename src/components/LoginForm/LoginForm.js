@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
+import { Toaster } from 'react-hot-toast';
 
 function Copyright() {
   return (
@@ -28,6 +29,7 @@ const theme = createTheme();
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
+  
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -38,10 +40,9 @@ export const LoginForm = () => {
         password: form.elements.password.value,
       })
     );
-    form.reset();
   };
 
-  return (
+  return ( <>
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -97,5 +98,8 @@ export const LoginForm = () => {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
+    <Toaster/>
+  </>
+  
   );
 };
