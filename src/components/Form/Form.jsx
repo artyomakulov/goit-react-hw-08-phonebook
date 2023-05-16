@@ -6,7 +6,6 @@ import {
   useFetchContactsQuery,
 } from 'redux/contacts/contactsApi';
 
-const notifyAdd = () => toast.success('Сontact added successfully!')
 
 function Form() {
   const [addContact] = useAddContactMutation();
@@ -30,7 +29,7 @@ function Form() {
       addContact(newContact);
       reset();
     }
-    notifyAdd()
+    toast.success('Сontact added successfully!')
   };
 
   const handleChange = e => {
