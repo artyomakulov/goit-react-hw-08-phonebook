@@ -6,10 +6,11 @@
   .title {
     font-size: 48px;
   }
-  .info {
-    font-size: 24px;
-  }
   .text {
-font-size: 20px;
+font-size: 24px;
 color: red;
-}
+}  
+.info {
+    font-size: 24px;
+    margin-top: 250px;
+  }

@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
       </div>
       <p className={css.text}>
-        To use the application, you should be authorized
+        To use the application, you should be authorized :)
       </p>
       <p className={css.info}>
         Here you can place any useful information, such as promotions and
