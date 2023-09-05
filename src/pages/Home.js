@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './Home.module.css';
-import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (

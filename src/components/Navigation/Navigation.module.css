@@ -1,3 +1,15 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .link {
     display: inline-block;
     text-decoration: none;
@@ -6,7 +18,7 @@
     color: #2a363b;
   }
   
-  .link.active {
-    color: #e84a5f;
+  .link:hover {
+    animation: pulse 1s infinite;
   }
   
