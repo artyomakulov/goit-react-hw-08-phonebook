@@ -1,0 +1,15 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .info {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+    color: red;
+}
